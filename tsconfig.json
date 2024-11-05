@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false, // TS 필수 적용 여부
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -24,7 +24,10 @@
     }
   },
   "include": [
+    // 사용 가능 확장자
     "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
